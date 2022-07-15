@@ -9,6 +9,8 @@
   --secondary: #ff5376;
   --alternative: #302f4d;
   --text-color: #2b2b2b;
+ 
+
 
   /* Spacing */
   --spacing-large: 6rem;
@@ -25,6 +27,34 @@
   --text-medium: 2.2em;
   --text-base: 1.6em;
   --text-small: 1.4em;
+}
+
+/* Head color */
+
+.head__color{
+  background-image: linear-gradient(
+    to top,
+    #363636,
+    #474454,
+    #575374,
+    #686296,
+    #7a71b8,
+    #7483d1,
+    #6996e9,
+    #54aaff,
+    #00c2ff,
+    #00d7ff,
+    #08eafd,
+    #5ffbf1
+  );
+}
+
+.head__font-size{
+  font-size: var(--text-medium);
+}
+
+.head__font-color{
+  color: red;
 }
 
 *::after,
@@ -57,9 +87,10 @@ img {
   width: 100%;
 }
 
+
 /* Header */
 
-header {
+/* header {
   background-image: linear-gradient(
     to top,
     #363636,
@@ -120,7 +151,7 @@ header {
 
 .menu_link:hover {
   border-color: var(--text-base);
-}
+} */
 
 /* Footer */
 
@@ -149,11 +180,14 @@ footer {
 
 .footer_img {
   max-width: 60px;
+  align-items: center;
+ 
 }
 
 .footer_iframe {
   max-width: 120px;
   max-height: 70px;
+ 
 }
 
 /* container_index */
@@ -258,7 +292,7 @@ grid-row: 1/4;
 
 /* container_contacto */
 
-.container_contacto {
+/* .container_contacto {
   background: url(./assets/img/contacto.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -272,11 +306,17 @@ grid-row: 1/4;
   margin-bottom: 60px;
   padding-left: 3rem;
   display: flex;
-}
+} */
 
 /* .formulario{
     z-index: 1;
  } */
+
+/* Color boton enviar en formulario */
+.color_button{
+  color: #00d7ff;
+  background-color: blueviolet;
+}
 
 /* container_nosotros */
 
@@ -331,7 +371,17 @@ grid-row: 1/4;
   font-size: var(--text-medium);
 }
 
-.productos_title {
+.titulo__caracteristicas{
+  font-family: var(--font-title);
+  font-size: var(--spacing-medium);
+  color: var(--secondary);
+}
+
+
+
+
+
+/* .productos_title {
   font-family: var(--font-title);
   font-size: var(--text-medium);
 }
@@ -339,7 +389,7 @@ grid-row: 1/4;
 .productos_subtitle {
   color: #00c2ff;
   font-family: var(--font-title);
-}
+} */
 
 /* container_fotografias */
 
@@ -552,11 +602,11 @@ grid-row: 1/4;
     flex-direction: column;
   }
 
-  header {
+/*   header {
     background-color: rgb(201, 200, 200);
     height: 20rem;
   }
-}
+} */
 
 @media screen and (max-width: 500px) {
   .container_productos {

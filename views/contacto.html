@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/silla_director.png" type="image/x-icon">
     <title>Contacto</title>
+
+       <!-- CSS BOOTSTRAP only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- CSS PROPIO -->
     <link rel="stylesheet" href="../estilos.css">
 </head>
 
 <body>
-    <!-- -----Inicio Header------- -->
-    <header>
+    <!-- -----INICIO DEL HEADER PROPIO------- -->
+<!--     <header>
         <div>
             <a href="../index.html"> <img class="header_img" src="../assets/img/silla_director.png" alt="silla">
             </a>
@@ -27,15 +32,52 @@
                 <li class="menu_item"> <a class="menu_link" href="../views/fotografias.html">Fotografias</a> </li>
             </ul>
         </nav>  
+    </header> -->
+
+       <!-- FIN HEADER PROPIO -->
+
+    <!-- INICIO HEADER BOOTSTRAP -->
+
+<header>
+    <nav class="navbar navbar-expand-lg head__color">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"> <img src="../assets/img/logo_magic_estudio.png" alt="logo"  height="190px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active head__font-size" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link head__font-size" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link head__font-size" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link head__font-size" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link head__font-size" href="./fotografias.html">Fotografias</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-     <!-- ----Fin Header----- -->
+    <!-- -----FIN HEADER BOOTSTRAP--------- -->
 
      <main class="container_contacto">
         <section class="contenido_contacto">
-            <div class="formulario">
-    <h2>Contacto</h2>
-    <form>
+    <!--         <div class="formulario">
+    <h2>Contacto</h2> -->
+
+    <!-- FORMULARIO PROPIO -->
+   <!--  <form>
         <fieldset>
             <legend> Datos de contacto</legend>
             <label for="nombre">Nombre</label>
@@ -60,7 +102,47 @@
 
 
         </fieldset>
-    </form>
+    </form> -->
+    <!-- FIN FORMULARIO PROPIO -->
+<!-- </div> -->
+
+<!-- INICIO FORMULARIO BOOTSTRAP -->
+<div class="container-fluid">
+  <h2 class="titulo__caracteristicas"> Formulario de contacto</h2>
+  <form>
+    <div class="row">
+      <div class="col form-control-lg">
+        <label for="Nombre" class="form-label"> Primer Nombre</label>
+        <input type="text" class="form-control form-control-lg" placeholder=" Ingresa tu Nombre" aria-label="First name">
+      </div>
+      <div class="col form-control-lg">
+        <label for="Apellido" class="form-label"> Primer Apellido</label>
+        <input type="text" class="form-control form-control-lg" placeholder=" Ingresa tu Apellido" aria-label="Last name">
+      </div>
+    </div>
+
+    <div class="mb-3 form-control-lg">
+      <label for="exampleInputEmail1" class="form-label"> Direccion de correo electronico</label>
+      <input type="email" class="form-control form-control-lg" placeholder=" Ingresa tu Email" aria-label="Last name" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie</div>
+    </div>
+    <div class="mb-3 form-control-lg">
+      <label for="exampleFormControlTextarea1" class="form-label">Ingresa tu consulta (Maximo 300 caracteres)</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="300"></textarea>
+    </div>
+    <div class="form-check form-control-lg">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+       Confirmo que soy mayor de 18 años
+      </label>
+    </div>
+    <div class="mb-3 form-check form-control-lg">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Registrarme</label>
+    </div>
+    <button type="submit" class="btn color_button form-control-lg">Enviar datos</button>
+  </form>
+
 </div>
 </section>
 </main>
@@ -72,12 +154,15 @@
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <img class="footer_img" src="../assets/img/logo_facebook.png" alt=""> <img class="footer_img"
-                src="../assets/img/logo_instagram.png" alt=""> <img class="footer_img"
-                src="../assets/img/logo_whatsapp.png" alt=""> <img class="footer_img"
-                src="../assets/img/logo_youtube.png" alt="">
+            <img class="footer_img" src="../assets/img/facebook.png" alt=""> <img class="footer_img"
+                src="../assets/img/instagram.png" alt=""> <img class="footer_img"
+                src="../assets/img/whatsapp.png" alt=""> <img class="footer_img"
+                src="../assets/img/yt.png" alt="">
         </div>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>

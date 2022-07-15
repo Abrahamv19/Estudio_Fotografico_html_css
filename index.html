@@ -9,14 +9,19 @@
     <title>Home</title>
     <link
     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+       <!-- CSS BOOTSTRAP only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- CSS PROPIO -->
     <link rel="stylesheet" href="estilos.css">
 
 </head>
 
 <body>
 
-    <!-- -----Inicio Header------- -->
-    <header>
+    <!-- -----INICIO HEADER PROPIO------- -->
+  <!--   <header>
         <div>
                 <img class="header_img" src="./assets/img/silla_director.png" alt="silla">
             <h1 class="header_title"> MAGIC ESTUDIO</h1>
@@ -30,9 +35,43 @@
                 <li class="menu_item"> <a class="menu_link" href="./views/fotografias.html">Fotografias</a> </li>
             </ul>
         </nav>
+    </header> -->
+    <!-- FIN HEADER PROPIO -->
+
+    <!-- INICIO HEADER BOOTSTRAP -->
+
+<header>
+    <nav class="navbar navbar-expand-lg head__color">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="./assets/img/logo_magic_estudio.png" alt="logo"  height="190px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active head__font-size" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link head__font-size" href="./views/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link head__font-size" href="./views/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link head__font-size" href="./views/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link head__font-size" href="./views/fotografias.html">Fotografias</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <!-- -----Fin Header--------- -->
+    <!-- -----FIN HEADER BOOTSTRAP--------- -->
 
     <main id="container_index" class="container_index">
         <section id="section_1" class="section_1">
@@ -77,16 +116,21 @@
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15931.646251901733!2d-76.5394458!3d3.3717925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3543b74a3e50b507!2sHolguines%20Trade%20Center%20Centro%20Comercial!5e0!3m2!1ses!2sco!4v1654793519878!5m2!1ses!2sco"
                 style="border: 0;;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
 
-            <img class="footer_img" src="./assets/img/logo_facebook.png" alt=""> <img class="footer_img"
-                src="./assets/img/logo_instagram.png" alt=""> <img class="footer_img"
-                src="./assets/img/logo_whatsapp.png" alt=""> <img class="footer_img" src="./assets/img/logo_youtube.png"
+            <img class="footer_img" src="./assets/img/facebook.png" alt=""> <img class="footer_img"
+                src="./assets/img/instagram.png" alt=""> <img class="footer_img"
+                src="./assets/img/whatsapp.png" alt=""> <img class="footer_img" src="./assets/img/yt.png"
                 alt="">
+
         </div>
 
 
 
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
