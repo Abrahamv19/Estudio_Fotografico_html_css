@@ -471,7 +471,7 @@ grid-row: 1/4;
 
 /* Media queries tabletas*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 968px) {
   .container_index {
     /*    margin-left: 0;
         margin-right: 0;
@@ -499,7 +499,7 @@ grid-row: 1/4;
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 968px) {
   .menu {
     justify-content: right;
   }
@@ -510,14 +510,14 @@ grid-row: 1/4;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 968px) {
   .info .info_img {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 968px){
     .container_nosotros{
         padding-left: 20px;
         padding-right: 20px;
@@ -527,7 +527,7 @@ grid-row: 1/4;
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 968px){
     .container_productos{
         padding-left: 20px;
         padding-right: 20px;
@@ -535,7 +535,7 @@ grid-row: 1/4;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 968px) {
   .gallery {
     width: 95%;
     grid-template-columns: repeat(2, 1fr);
@@ -566,7 +566,7 @@ grid-row: 1/4;
 
 /* Media queries para mobile */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
   .container_index {
     width: 90%;
     flex-wrap: wrap;
@@ -577,7 +577,7 @@ grid-row: 1/4;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
   .gallery {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
@@ -595,7 +595,7 @@ grid-row: 1/4;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
   header .menu {
     width: 90%;
     flex-wrap: wrap;
@@ -605,12 +605,13 @@ grid-row: 1/4;
 /*   header {
     background-color: rgb(201, 200, 200);
     height: 20rem;
-  }
-} */
+  } */
+}
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
   .container_productos {
     width: 90%;
     font-size: var(--text-small);
   }
 }
+
