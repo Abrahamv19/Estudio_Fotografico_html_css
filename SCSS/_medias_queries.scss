@@ -1,0 +1,131 @@
+/* Media queries tabletas*/
+
+@media screen and (max-width: 968px) {
+    .container_index {
+      width: 95%;
+      flex-wrap: wrap;
+
+      &__section_1 {
+        background-color: white;
+        border: none;
+      }
+
+      &__section_2 {
+        background-color: white;
+        border: none;
+      }
+
+      &__section_2:hover {
+        background-color: white;
+      }
+    }
+  
+    .efecto_fotografo:hover {
+      background-image: url(../assets/img/fotografo_1.jpg);
+    }
+  }
+  
+  @media screen and (max-width: 968px) {
+    .container_fotografias__info .container_fotografias__info_img {
+      padding: {
+        left: 20px;
+        right: 20px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 968px) {
+    .container_nosotros {
+      padding: {
+        left: 20px;
+        right: 20px;
+      }
+      &__banner_text {
+        font-size: $text-small;
+      }
+      &__banner_descripcion {
+        font-size: $text-medium;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 968px) {
+    .container_productos {
+      padding: {
+        left: 20px;
+        right: 20px;
+      }
+      font-size: $text-small;
+    }
+  }
+  
+  @media screen and (max-width: 968px) {
+    .container_fotografias {
+        flex-wrap: wrap;
+        &__info {
+            flex-wrap: wrap;
+          }
+        &__gallery {
+            width: 95%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            grid-template-rows: 200px;
+          }
+          &__info_box .container_fotografias__info_title {
+            font-size: $text-medium;
+          }
+          &__gallery .container_fotografias__gallery_img:nth-child(1) {
+            grid-column-start: span 1;
+          }
+          &__gallery .container_fotografias__gallery_img:nth-child(4) {
+            grid-row-start: span 1;
+          }
+          &__gallery .container_fotografias__gallery_img:nth-child(9) {
+            grid-column-start: span 2;
+          }
+    }
+  }
+  
+  /* Media queries para mobile */
+  
+  @media screen and (max-width: 576px) {
+    .container_index {
+      width: 90%;
+      flex-wrap: wrap;
+      &__section_2 {
+        border-left: none;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .container_nosotros{
+      &__banner_descripcion {
+        font-size: $text-small;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .container_fotografias {
+        &__gallery {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);}
+      &__gallery .container_fotografias__gallery_img:nth-child(9) {
+        grid-column-start: span 1;
+      }
+      &__gallery .container_fotografias__gallery_img img {
+        height: 200px;
+      }
+      &__info_box .container_fotografias__info_description {
+        font-size: $text-small;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .container_productos {
+      width: 90%;
+      font-size: $text-small;
+    }
+  }
