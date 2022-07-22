@@ -3,7 +3,7 @@
 
 <h2> Tecnologias usadas<h2>
 <ul>
-<li> HTM5L<li>
+<li> HTML5<li>
 <li> CSS3<li>
 <li> Bootstrap<li>
 <li> Node.js <li>
