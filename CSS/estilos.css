@@ -30,6 +30,15 @@ a {
 img {
   width: 100%; }
 
+/* EXTEND para containers -index-nosotros-productos */
+.repetitive_features, .container_index, .container_nosotros, .container_productos {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+/* MIXIN para Footer container_nosotros__banner container_fotografias__info */
 /* Caracteristicas del HEAD para el Menu de Bootstrap */
 .head__color {
   background-image: linear-gradient(to top, #363636, #474454, #575374, #686296, #7a71b8, #7483d1, #6996e9, #54aaff, #00c2ff, #00d7ff, #08eafd, #5ffbf1); }
@@ -45,8 +54,8 @@ img {
 footer {
   background-image: linear-gradient(to bottom, #363636, #474454, #575374, #686296, #7a71b8, #7483d1, #6996e9, #54aaff, #00c2ff, #00d7ff, #08eafd, #5ffbf1);
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   padding: 2rem 0;
   border-top: 2px solid #ff5376; }
   footer .footer__img {
@@ -58,12 +67,7 @@ footer {
 
 /* container_index */
 .container_index {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  margin: auto;
-  margin-top: 0px;
-  margin-bottom: 0px; }
+  display: flex; }
   .container_index__section_1 {
     border-left: 2px solid #ff5376; }
   .container_index__section_2 {
@@ -104,27 +108,25 @@ footer {
 
 /* container_nosotros */
 .container_nosotros {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  margin-top: 0px;
-  margin-bottom: 0px; }
+  margin-top: 20px; }
   .container_nosotros__banner {
     width: 100%;
     height: 400px;
     display: flex;
     align-items: center;
+    justify-content: left;
     text-align: left;
     background-image: url(../assets/img/nosotros.jpeg);
     background-attachment: fixed;
     background-size: cover;
+    border-top: 2px solid #ff5376;
     border-left: 2px solid #ff5376;
     border-right: 2px solid #ff5376; }
   .container_nosotros__banner_descripcion {
     width: 90%;
     max-width: 1200px;
-    display: block;
     margin: auto;
+    display: block;
     font-family: "Gentium Book Plus", serif;
     font-size: 5.2em;
     color: #f8092d; }
@@ -136,13 +138,8 @@ footer {
 
 /* container_productos */
 .container_productos {
-  width: 100%;
   height: auto;
-  max-width: 1200px;
   padding-bottom: 20px;
-  margin: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
   font-family: "Arima", cursive;
   font-size: 2.2em; }
   .container_productos__titulo_caracteristicas {
@@ -162,7 +159,8 @@ footer {
     margin-top: 60px;
     margin-bottom: 60px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   .container_fotografias__info_img {
     flex: 1 1 50%; }
   .container_fotografias__info_box {
@@ -227,6 +225,10 @@ footer {
   .container_nosotros {
     padding-left: 20px;
     padding-right: 20px; }
+    .container_nosotros__banner {
+      background-size: contain;
+      width: 100%;
+      height: 300px; }
     .container_nosotros__banner_text {
       font-size: 1.4em; }
     .container_nosotros__banner_descripcion {

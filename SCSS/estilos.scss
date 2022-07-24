@@ -2,9 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@200&family=Gentium+Book+Plus&display=swap");
 
-@import "variables";
+@import "utilities/variables";
 
-@import "normalizacion";
+@import "utilities/normalizacion";
+
+@import "utilities/maps";
+
 
 /* Caracteristicas del HEAD para el Menu de Bootstrap */
 
@@ -53,9 +56,8 @@ footer {
     #08eafd,
     #5ffbf1
   );
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  @include flexbox(flex, center, space-around);
+
   padding: $spacing-small 0;
   border-top: 2px solid $secondary;
   
@@ -73,18 +75,14 @@ footer {
   }
 }
 
+
+
 /* container_index */
 
 .container_index {
-  width: 100%;
-  max-width: 1200px;
+  @extend .repetitive_features;
+ 
   display: flex;
-  margin: auto;
-
-  margin: {
-    top: 0px;
-    bottom: 0px;
-  }
 
   &__section_1 {
     border-left: 2px solid $secondary;
@@ -147,26 +145,24 @@ footer {
 /* container_nosotros */
 
 .container_nosotros {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  margin: {
-    top: 0px;
-    bottom: 0px;
-  }
+  @extend .repetitive_features;
+  margin-top: 20px;
 
   &__banner {
     width: 100%;
     height: 400px;
-    display: flex;
-    align-items: center;
+
+    @include flexbox(flex, center, left);
+  
     text-align: left;
     background: {
       image: url(../assets/img/nosotros.jpeg);
       attachment: fixed;
       size: cover;
     }
+    
     border: {
+      top: 2px solid $secondary;
       left: 2px solid $secondary;
       right: 2px solid $secondary;
     }
@@ -175,8 +171,9 @@ footer {
   &__banner_descripcion {
     width: 90%;
     max-width: 1200px;
-    display: block;
     margin: auto;
+    display: block;
+   
     font: {
       family: $font-title;
       size: $text-large;
@@ -197,15 +194,12 @@ footer {
 /* container_productos */
 
 .container_productos {
-  width: 100%;
+  @extend .repetitive_features;
+
   height: auto;
-  max-width: 1200px;
   padding-bottom: 20px;
-  margin: auto;
-  margin: {
-    top: 0px;
-    bottom: 0px;
-  }
+  
+
   font: {
     family: $font-principal;
     size: $text-medium;
@@ -235,8 +229,7 @@ footer {
       top: 60px;
       bottom: 60px;
     }
-    display: flex;
-    align-items: center;
+    @include flexbox(flex, center, center);
   }
   &__info_img {
     flex: 1 1 50%;
@@ -296,7 +289,10 @@ footer {
 }
 
 /* Medias queries */
-@import "medias_queries"
+
+@import "utilities/medias_queries"
+
+
 
 
 

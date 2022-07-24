@@ -1,0 +1,19 @@
+/* EXTEND para containers -index-nosotros-productos */
+
+.repetitive_features {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    margin: {
+      top: 0px;
+      bottom: 0px;
+    }
+  }
+  
+  /* MIXIN para Footer container_nosotros__banner container_fotografias__info */
+  
+  @mixin flexbox ($display, $align, $justify) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+  }
