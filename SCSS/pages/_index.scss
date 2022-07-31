@@ -12,8 +12,8 @@
     &__section_2 {
       background-color: rgb(181, 180, 180);
       padding: {
-        left: 3rem;
-        right: 3rem;
+       /*  left: 3rem;
+        right: 3rem;  */
       }
       border: {
         left: 2px solid $secondary;
@@ -59,7 +59,7 @@
   /* Transformacion fotografo index */
   
   .efecto_fotografo {
-    width: 400px;
+    width:  400px;
     height: 35vh;
     background: {
       image: url(../assets/img/fotografo_1.jpg);
