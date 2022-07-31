@@ -1,0 +1,23 @@
+/* PRODUCTOS */
+/* container_productos */
+
+.container_productos {
+    @extend .repetitive_features;
+  
+    height: auto;
+    padding-bottom: 20px;
+    
+  
+    font: {
+      family: $font-principal;
+      size: $text-medium;
+    }
+    
+    &__titulo_caracteristicas {
+      font: {
+        family: $font-title;
+        size: $spacing-medium;
+      }
+      color: $secondary;
+    }
+  }

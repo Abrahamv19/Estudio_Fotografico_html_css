@@ -1,0 +1,24 @@
+
+/* HEADER PARA MENU CON BOOTSTRAP */
+
+.head__color {
+    background-image: linear-gradient(
+      to top,
+      #363636,
+      #474454,
+      #575374,
+      #686296,
+      #7a71b8,
+      #7483d1,
+      #6996e9,
+      #54aaff,
+      #00c2ff,
+      #00d7ff,
+      #08eafd,
+      #5ffbf1
+    );
+  }
+  
+  .head__font-size {
+    font-size: $text-medium;
+  }

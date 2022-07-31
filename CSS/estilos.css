@@ -1,10 +1,14 @@
-/* ---Fonts--- */
+/* ---FONTS--- */
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@200&family=Gentium+Book+Plus&display=swap");
 /* VARIABLES */
 /* Colors */
 /* Spacing */
 /* Font family */
 /* Font Sizes */
+/* Caracteristicas titulo Productos y contacto */
+.head__font-color {
+  color: red; }
+
 /* NORMALIZACION */
 *::after,
 *::before,
@@ -30,6 +34,7 @@ a {
 img {
   width: 100%; }
 
+/* MAPS */
 /* EXTEND para containers -index-nosotros-productos */
 .repetitive_features, .container_index, .container_nosotros, .container_productos {
   width: 100%;
@@ -39,24 +44,20 @@ img {
   margin-bottom: 0px; }
 
 /* MIXIN para Footer container_nosotros__banner container_fotografias__info */
-/* Caracteristicas del HEAD para el Menu de Bootstrap */
+/* HEADER PARA MENU CON BOOTSTRAP */
 .head__color {
   background-image: linear-gradient(to top, #363636, #474454, #575374, #686296, #7a71b8, #7483d1, #6996e9, #54aaff, #00c2ff, #00d7ff, #08eafd, #5ffbf1); }
 
 .head__font-size {
   font-size: 2.2em; }
 
-/* Caracteristicas titulo Productos y contacto */
-.head__font-color {
-  color: red; }
-
-/* Footer */
+/* FOOTER */
 footer {
   background-image: linear-gradient(to bottom, #363636, #474454, #575374, #686296, #7a71b8, #7483d1, #6996e9, #54aaff, #00c2ff, #00d7ff, #08eafd, #5ffbf1);
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 2rem 0;
+  padding: 2rem 10px;
   border-top: 2px solid #ff5376; }
   footer .footer__img {
     max-width: 60px;
@@ -65,6 +66,7 @@ footer {
     max-width: 120px;
     max-height: 70px; }
 
+/* INDEX */
 /* container_index */
 .container_index {
   display: flex; }
@@ -77,7 +79,7 @@ footer {
     border-left: 2px solid #ff5376;
     border-right: 2px solid #ff5376; }
   .container_index__section_2:hover {
-    background-color: #00d7ff; }
+    background-image: linear-gradient(to top, #08eafd, #00d7ff, #00c2ff, #686296, #7a71b8, #7483d1, #6996e9, #54aaff, #00c2ff, #00d7ff, #08eafd, #5ffbf1); }
   .container_index__box_title {
     font-family: "Gentium Book Plus", serif;
     font-size: 2.2em;
@@ -100,12 +102,7 @@ footer {
   .efecto_fotografo:hover {
     background-image: url(../assets/img/fotografo2.jpeg); }
 
-/* container_contacto (formulario con Bootstrap) */
-/* Color boton enviar en formulario */
-.color_button {
-  color: #00d7ff;
-  background-color: blueviolet; }
-
+/* NOSOTROS */
 /* container_nosotros */
 .container_nosotros {
   margin-top: 20px; }
@@ -136,6 +133,7 @@ footer {
     border-top: 2px solid #ff5376;
     padding-top: 2rem; }
 
+/* PRODUCTOS */
 /* container_productos */
 .container_productos {
   height: auto;
@@ -147,6 +145,14 @@ footer {
     font-size: 2.4rem;
     color: #ff5376; }
 
+/* CONTACTO */
+/* container_contacto (formulario con BOOTSTRAP) */
+/* Color boton enviar en formulario */
+.color_button {
+  color: #00d7ff;
+  background-color: blueviolet; }
+
+/* FOTOGRAFIAS */
 /* container_fotografias y Gallery */
 .container_fotografias {
   max-width: 1200px;
@@ -199,7 +205,7 @@ footer {
   .container_fotografias__gallery .container_fotografias__gallery_img:nth-child(9) {
     grid-column-start: span 2; }
 
-/* Medias queries */
+/* MEDIAS QUERIES */
 /* Media queries tabletas*/
 @media screen and (max-width: 968px) {
   .container_index {
@@ -207,12 +213,15 @@ footer {
     flex-wrap: wrap; }
     .container_index__section_1 {
       background-color: white;
+      background-image: none;
       border: none; }
     .container_index__section_2 {
       background-color: white;
+      background-image: none;
       border: none; }
     .container_index__section_2:hover {
-      background-color: white; }
+      background-color: white;
+      background-image: none; }
   .efecto_fotografo:hover {
     background-image: url(../assets/img/fotografo_1.jpg); } }
 
@@ -265,7 +274,9 @@ footer {
     width: 90%;
     flex-wrap: wrap; }
     .container_index__section_2 {
-      border-left: none; } }
+      border-left: none;
+      padding: 0;
+      margin: 0; } }
 
 @media screen and (max-width: 576px) {
   .container_nosotros__banner_descripcion {

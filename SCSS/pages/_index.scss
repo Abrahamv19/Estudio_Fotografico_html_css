@@ -1,0 +1,72 @@
+/* INDEX */
+/* container_index */
+
+.container_index {
+    @extend .repetitive_features;
+   
+    display: flex;
+  
+    &__section_1 {
+      border-left: 2px solid $secondary;
+    }
+    &__section_2 {
+      background-color: rgb(181, 180, 180);
+      padding: {
+        left: 3rem;
+        right: 3rem;
+      }
+      border: {
+        left: 2px solid $secondary;
+        right: 2px solid $secondary;
+      }
+    }
+    &__section_2:hover {
+      background-image: linear-gradient(
+        to top,
+        #08eafd,
+        #00d7ff,
+        #00c2ff,
+        #686296,
+        #7a71b8,
+        #7483d1,
+        #6996e9,
+        #54aaff,
+        #00c2ff,
+        #00d7ff,
+        #08eafd,
+        #5ffbf1
+      );
+    }
+    &__box_title {
+      font: {
+        family: $font-title;
+        size: $text-medium;
+      }
+      color: $primary;
+    }
+    &__box_subtitle {
+      margin-top: 0.6rem;
+      color: $secondary;
+      font-size: $text-small;
+    }
+    &__box_text {
+      margin-top: 1rem;
+      color: $text-color;
+      font-size: $text-base;
+    }
+  }
+  
+  /* Transformacion fotografo index */
+  
+  .efecto_fotografo {
+    width: 400px;
+    height: 35vh;
+    background: {
+      image: url(../assets/img/fotografo_1.jpg);
+      size: cover;
+    }
+    &:hover {
+      background-image: url(../assets/img/fotografo2.jpeg);
+      
+    }
+  }
