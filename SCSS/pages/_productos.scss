@@ -16,12 +16,13 @@
     &__titulo_caracteristicas {
       font: {
         family: $font-title;
-        size: $spacing-medium;
+        size: $text-medium;
       }
       color: $secondary;
     }
   }
+
   .espacio_vacio{
     width: 90%;
-    height: 10rem;
+    height: 2.5rem;
   }

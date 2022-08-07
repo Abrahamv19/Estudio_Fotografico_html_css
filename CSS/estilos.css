@@ -71,11 +71,13 @@ footer {
 .container_index {
   display: flex; }
   .container_index__section_1 {
-    border-left: 2px solid #ff5376; }
+    border-left: 2px solid #ff5376;
+    padding-left: 3rem;
+    padding-right: 3rem; }
   .container_index__section_2 {
     background-color: #b5b4b4;
-    /*  left: 3rem;
-        right: 3rem;  */
+    padding-left: 3rem;
+    padding-right: 3rem;
     border-left: 2px solid #ff5376;
     border-right: 2px solid #ff5376; }
   .container_index__section_2:hover {
@@ -142,15 +144,19 @@ footer {
   font-size: 2.2em; }
   .container_productos__titulo_caracteristicas {
     font-family: "Gentium Book Plus", serif;
-    font-size: 2.4rem;
+    font-size: 2.2em;
     color: #ff5376; }
 
 .espacio_vacio {
   width: 90%;
-  height: 10rem; }
+  height: 2.5rem; }
 
 /* CONTACTO */
 /* container_contacto (formulario con BOOTSTRAP) */
+.container_contacto {
+  margin-left: 10px;
+  margin-right: 10px; }
+
 /* Color boton enviar en formulario */
 .color_button {
   color: #00d7ff;
@@ -181,7 +187,7 @@ footer {
   .container_fotografias__info_title {
     font-size: 5.2em;
     font-family: "Gentium Book Plus", serif;
-    color: #120d31; }
+    color: #ff5376; }
   .container_fotografias__info_description {
     font-size: 2.2em;
     font-weight: 600; }
@@ -252,7 +258,15 @@ footer {
   .container_productos {
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 1.4em; } }
+    font-size: 1.4em; }
+    .container_productos .espacio_vacio {
+      height: 7.5rem; }
+    .container_productos .container_productos__titulo_caracteristicas {
+      font-size: 2.2em; } }
+
+@media screen and (max-width: 968px) {
+  .container_contacto .espacio_vacio {
+    height: 7.5rem; } }
 
 @media screen and (max-width: 968px) {
   .container_fotografias {
@@ -277,12 +291,16 @@ footer {
 @media screen and (max-width: 576px) {
   .container_index {
     flex-wrap: wrap; }
+    .container_index__section_1 {
+      padding-left: 7px;
+      padding-right: 7px; }
     .container_index__section_2 {
       border-left: none;
-      padding: 0;
+      padding-left: 7px;
+      padding-right: 7px;
       margin: 0; }
     .container_index .efecto_fotografo {
-      width: 360px; } }
+      width: 330px; } }
 
 @media screen and (max-width: 576px) {
   .container_nosotros__banner_descripcion {

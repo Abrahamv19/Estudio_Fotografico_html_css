@@ -66,6 +66,21 @@
         right: 20px;
       }
       font-size: $text-small;
+        .espacio_vacio{
+          height: 7.5rem;
+        }
+        .container_productos__titulo_caracteristicas{
+          font-size: $text-medium;
+        }
+    
+    }
+  }
+
+  @media screen and (max-width: 968px){
+    .container_contacto{
+      .espacio_vacio{
+        height: 7.5rem;
+      }
     }
   }
   
@@ -101,13 +116,22 @@
   @media screen and (max-width: 576px) {
     .container_index {
       flex-wrap: wrap;
+      &__section_1 {
+        padding: {
+          left: 7px;
+          right: 7px; 
+        }
+      }
       &__section_2 {
         border-left: none;
-        padding: 0;
+        padding: {
+          left: 7px;
+          right: 7px; 
+        }
         margin: 0;
       }
       .efecto_fotografo {
-        width:  360px;}
+        width:  330px;}
     }
   }
   
@@ -142,3 +166,4 @@
       font-size: $text-small;
     }
   }
+

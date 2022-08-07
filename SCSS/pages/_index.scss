@@ -8,12 +8,16 @@
   
     &__section_1 {
       border-left: 2px solid $secondary;
+      padding: {
+        left: 3rem;
+        right: 3rem; 
+      }
     }
     &__section_2 {
       background-color: rgb(181, 180, 180);
       padding: {
-       /*  left: 3rem;
-        right: 3rem;  */
+        left: 3rem;
+        right: 3rem; 
       }
       border: {
         left: 2px solid $secondary;
