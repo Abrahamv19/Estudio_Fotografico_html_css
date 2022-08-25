@@ -65,12 +65,12 @@
         left: 20px;
         right: 20px;
       }
-      font-size: $text-small;
+      .text_carousel{
+        font-size: $text-small;
+      }
+    
         .espacio_vacio{
           height: 7.5rem;
-        }
-        .container_productos__titulo_caracteristicas{
-          font-size: $text-medium;
         }
     
     }
@@ -163,7 +163,11 @@
   @media screen and (max-width: 576px) {
     .container_productos {
       width: 90%;
-      font-size: $text-small;
+     
+      .text_carousel{
+        font-size: $text-small;
+      }
     }
+  
   }
 

@@ -62,9 +62,9 @@
    <main class="container_productos">
      
       <!-- INICIO CAROUSEL CON BOOTSTRAP -->
-      <section container-fluid>
+      <section>
         <div class="espacio_vacio"></div>
-        <h1 class="container_productos__titulo_caracteristicas text-center animate__animated animate__flash animate__repeat-3"> Productos</h1>
+        <h1 class="container_index__box_title animate__animated animate__backInDown"> PRODUCTOS</h1>
 
         <div class="espacio_vacio"></div>
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade container-fluid" data-bs-ride="false">
@@ -79,21 +79,21 @@
               <img src="../assets/img/producto_foto_video_individual.jpeg" class="d-block w-100" alt="foto o video individual">
               <div class="carousel-caption">
                 <h2>FOTO O VIDEO INDIVIDUAL</h2>
-                <p>  Hasta 4 fotos en raw o jpg tiene un valor de $US20 y un video de 30 segundos en formato raw o mp4 tiene un valor $US 25.</p>
+                <p class="text_carousel">  Hasta 4 fotos en raw o jpg tiene un valor de $US20 y un video de 30 segundos en formato raw o mp4 tiene un valor $US 25.</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="../assets/img/productos_foto_video_sesion.jpeg" class="d-block w-100" alt="sesiones">
               <div class="carousel-caption">
                 <h2>SESION DE FOTOS O VIDEO</h2>
-                <p> Sesion de fotos o video de 2 horas tiene un valor de $US 100, se entregan en formato raw o jpg y el video en formato raw o mp4.</p>
+                <p class="text_carousel"> Sesion de fotos o video de 2 horas tiene un valor de $US 100, se entregan en formato raw o jpg y el video en formato raw o mp4.</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="../assets/img/producto_edicion.jpeg" class="d-block w-100" alt="edicion">
               <div class="carousel-caption">
                 <h2>SESION DE FOTOS O VIDEO MAS EDICION</h2>
-                <p> La sesion de 2 horas de fotos o videos mas la edicion de las
+                <p class="text_carousel"> La sesion de 2 horas de fotos o videos mas la edicion de las
                   fotografias o el video tiene un valor de $US 150.
                  </p>
               </div>
@@ -109,33 +109,44 @@
           </button>
         </div>
         <div class="espacio_vacio">
+
         </div>
-        <h2 class="container_productos__titulo_caracteristicas text-center animate__animated animate__flash animate__repeat-3"> Contáctanos</h2>
+        <div>
+          <p class="container_index__box_text">
+            “La fotografía (si es honrada y directa) tendría que estar relacionada con la vida contemporánea, con el pulso de hoy día. El desafío para mí ha sido en primer lugar, ver las cosas como son, ya sea un retrato, una calle de ciudad, o una pelota. En una palabra, he tratado de ser objetiva. No me refiero a la objetividad de una máquina, sino a la de un ser humano sensible con su misterioso y personal criterio. El segundo reto ha sido el de imponer el orden en las cosas que veo, para proporcionar el contexto visual y el marco intelectual, lo que para mí es el arte de la fotografía.” Berenice Abbott
+          </p>
+        </div>
+      <!--   <h2 class="container_index__box_title text-center animate__animated animate__flash animate__repeat-3"> CONTÁCTANOS</h2> -->
         <div class="espacio_vacio"></div>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer class="flex">
-      <div>
-        <h3 class="container_index__box_title">Telefono: 057-602-5551066</h3>
-        <h3 class="container_index__box_title">Direccion: Cra. 100 #11-60, Cali, Valle del Cauca</h3>
-        </div>
-     <div>
-        <iframe
-          class="footer__iframe"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15931.646251901733!2d-76.5394458!3d3.3717925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3543b74a3e50b507!2sHolguines%20Trade%20Center%20Centro%20Comercial!5e0!3m2!1ses!2sco!4v1654793519878!5m2!1ses!2sco"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+    <footer>
+      <div class="contenedor">
+        <h2 class="titulo_footer">
+          Direccion: Cra. 100 #11-60, Cali, Valle del Cauca
+        </h2>
+    
       </div>
-        <div>
+      
+       <div class="iframe">
+      <iframe class="footer__iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15931.646251901733!2d-76.5394458!3d3.3717925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3543b74a3e50b507!2sHolguines%20Trade%20Center%20Centro%20Comercial!5e0!3m2!1ses!2sco!4v1654793519878!5m2!1ses!2sco"
+                    style="border: 0;;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    
+      <div class="redes_sociales">
+          
         <img class="footer__img" src="../assets/img/facebook.png" alt="facebook"> <img class="footer__img"
         src="../assets/img/instagram.png" alt="instagram"> <img class="footer__img"
         src="../assets/img/whatsapp.png" alt="whatsapp"> <img class="footer__img"
         src="../assets/img/yt.png" alt="youtube">
+      </div>
+    
+      <div class="contenendor">
+        <p class="copy"> © 2022 Hugo Vasquez / Todos los derechos reservados</p>
       </div>
     </footer>
 
